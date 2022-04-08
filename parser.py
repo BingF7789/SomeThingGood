@@ -30,8 +30,7 @@ def parameter_parser():
     parser.add_argument('-num_clusters_val', type=int, default=5, help='Number of clusters for validation.')
     parser.add_argument('-num_clusters_test', type=int, default=1, help='Number of clusters for test.')
     parser.add_argument('-num_layers', type=int, default=5, help='Number of GCN layers.')
-    parser.add_argument('-diag_lambda', type=float, default=1, help='A positive number for diagonal enhancement,'
-                                                                  '-1 indicates normalization without diagonal enhancement')
+    parser.add_argument('-diag_lambda', type=float, default=1, help='A positive number for diagonal enhancement, -1 indicates normalization without diagonal enhancement')
     parser.add_argument('-multilabel', type=int, default=1, help='Multilabel or multiclass.')
     parser.add_argument('-layernorm', type=int, default=1, help='Whether to use layer normalization.')
     parser.add_argument('-precalc', type=int, default=1, help='Whether to pre-calculate the first layer (AX preprocessing).')

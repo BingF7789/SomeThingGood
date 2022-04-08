@@ -32,7 +32,6 @@ class GraphConvolution(torch.nn.Module):
 
     def forward(self, support, inputs):
         x = inputs
-
         # convolve
         if self.precalc:
             support = x

@@ -34,6 +34,7 @@ def main():
     #     pic = pickle.load(open(pickle_name, "rb"))
     #     print("Loading Done. " + str(time.time()-load_time) + " seconds.")
     # else:
+    
     if True:
         print("Data Pre-processing")
         # Load data

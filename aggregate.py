@@ -36,6 +36,7 @@ def weighted_agg(w_clients, w_server, stepsize, metric, dp):
     :param dp: magnitude of randomization
     :return: updated server model parameters
     """
+    
     w_next = copy.deepcopy(w_server)
     att, att_mat = {}, {}
     for k in w_server.keys():

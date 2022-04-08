@@ -21,7 +21,6 @@ def main():
 
     if args.device >= 0:
         os.environ['CUDA_VISIBLE_DEVICES'] = str(args.device)
-
     torch.manual_seed(args.seed)
     np.random.seed(args.seed)
     pic = {}

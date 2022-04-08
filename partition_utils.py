@@ -49,7 +49,7 @@ def partition_graph(adj, idx_nodes, num_clusters):
         _, groups = metis.part_graph(train_adj_lists, num_clusters, seed=1)
     else:
         groups = [0] * num_nodes
-
+    
     part_row = []
     part_col = []
     part_data = []

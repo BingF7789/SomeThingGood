@@ -14,7 +14,6 @@ def slave_run_train(model, args, package, pid="None"):
     # optimizer = torch.optim.SGD(model.parameters(), lr=args.lr, momentum=args.momentum)
 
     list_loss, list_acc = [], []
-
     for iter in range(args.slave_ep):
         if args.dataset == "Amazon":
             feature = torch.tensor(package["features"], dtype=torch.float32)
